@@ -1,0 +1,15 @@
+{
+  "name": "forkify-course-project",
+  "version": "1.0.0",
+  "description": "forkify project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "webpack": "^4.20.2"
+  }
+}
