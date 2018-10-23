@@ -5,17 +5,10 @@ export default class Search {
     this.query = query;
   }
 
-
   async getResults() {
-    const proxy = 'https://cors-anywhere.herokuapp.com/';
+    const proxy = '';
     const API_KEY = 'a22037d25fcaba874e4a559f03254286';
     const res = await axios(`${proxy}http://www.food2fork.com/api/search?key=${API_KEY}&q=${this.query}`);
-    this.result = res.data.recipe;
-    console.log(this.result)
+    this.result = res.data.recipes;
   }
 }
-
-import axios from 'axios';
-
-
-getResults('chicken');
